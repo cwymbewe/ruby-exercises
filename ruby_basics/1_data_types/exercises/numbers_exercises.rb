@@ -5,7 +5,7 @@ end
 
 def subtract(a, b)
   # return the result of subtracting b from a
-  b - a
+  a - b
 end
 
 def multiply(a, b)
@@ -25,7 +25,7 @@ end
 
 def float_division(a, b)
   # return the result of dividing a by b as a float, rather than an integer
-  a.to_f / b.to_f
+  a / b.to_f
 end
 
 def string_to_number(string)
@@ -35,11 +35,11 @@ end
 
 def even?(number)
   # return true if the number is even (hint: use integer's even? method)
-  number.even?
+  number.to_i.even?
 
 end
 
 def odd?(number)
   # return true if the number is odd (hint: use integer's odd? method)
-  number.odd?
+  number.to_i.odd?
 end
